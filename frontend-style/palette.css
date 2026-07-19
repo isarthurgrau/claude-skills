@@ -1,0 +1,23 @@
+/* Arthur Grau palette — source of truth: Dropbox/Apps/arthur-grau-palette.scss
+   Inline this block into self-contained pages/artifacts. */
+:root {
+  --scarlet-rush: #db2b39;   /* accent: CTAs, alerts — use sparingly */
+  --dusk-blue: #304d6d;      /* primary: headers, nav, buttons, links */
+  --dim-grey: #6b6b6b;       /* secondary text, borders */
+  --sky-reflection: #7eb2dd; /* highlights, hover, info surfaces */
+  --sage-green: #6cae75;     /* success, positive metrics */
+
+  --bg: #fafaf8;             /* near-white surface */
+  --ink: #1d2126;            /* near-black text */
+  --accent-bar: linear-gradient(90deg, #db2b39, #304d6d, #6b6b6b, #7eb2dd, #6cae75);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d2126;
+    --ink: #fafaf8;
+    --dusk-blue: #22394f;      /* shifts to surface duty */
+    --dim-grey: #9a9a9a;
+    /* sky-reflection becomes the primary interactive color in dark mode */
+  }
+}
